@@ -31,18 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (imc < 18.5) {
             statusElement.textContent = "Você está abaixo do peso.";
-        } else if (imc >= 18.5 && imc < 24.9) {
+        } else if (imc < 24.9) {
             statusElement.textContent = "Seu peso está normal.";
-        } else if (imc >= 25 && imc < 29.9) {
+        } else if (imc < 29.9) {
             statusElement.textContent = "Você está com sobrepeso.";
-        } else if (imc >= 30 && imc < 34.9) {
+        } else if (imc < 34.9) {
             statusElement.textContent = "Você está com obesidade grau 1.";
-        } else if (imc >= 35 && imc < 39.9) {
+        } else if (imc < 39.9) {
             statusElement.textContent = "Você está com obesidade grau 2.";
         } else {
             statusElement.textContent = "Você está com obesidade grau 3.";
         }
-    }
+        
 
     function calcularIMC() {
         var weight = parseFloat(peso.value);
