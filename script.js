@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var imc = weight / (height * height);
 
         var resultadoElement = document.querySelector(".container__resultado h2");
-        var statusElement = document.querySelector(".container__resultado p");
+        var statusElement = document.querySelector(".container__resultado h3");
 
         if (!isNaN(imc)) {
             resultadoElement.textContent = `Seu IMC é: ${imc.toFixed(2)}`;
