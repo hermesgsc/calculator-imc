@@ -1,0 +1,148 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+:root {
+    --background-color: #242424;
+    --secondary-color: #353535;
+    --font-color: #38794B;
+    --font-color2: #61b47a;
+    --font-standard: 'Roboto', sans-serif;
+    --error-color: #ff3333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    overflow: hidden;
+}
+
+.container {
+    padding-top: 250px;
+    
+}
+
+.container__resultado {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__elements {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;;
+    align-items: center;
+}
+
+h1 {
+    font-size: 29px;
+    font-family: var(--font-standard);
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: var(--font-standard);
+    padding-top: 15px;
+
+}
+
+h3 {
+    font-size: 20px;
+    font-family: var(--font-standard);
+    padding-top: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid transparent;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-top: 5px;
+    width: 230px;
+}
+
+input:focus {
+    border-color: var(--font-color);
+}
+
+.container__error {
+    transition: all 0.3s;
+    display: flex;
+    padding-right: 10%;
+    padding-top: 3px;
+}
+
+p {
+    color: var(--error-color);
+    font-family: var(--font-standard);
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: var(--font-color);
+    border: transparent;
+    transition: all 0.5s;
+    width: 260px;
+}
+
+button:hover {
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: var(--font-color2);
+    scale: 102%;
+}
+
+@media screen and (min-width: 500px) {
+    input {
+        width: 300px;
+    }
+    
+    button {
+        width: 330px;
+    }
+
+    h1 {
+        font-size: 37px;
+    }
+
+    h2, h3 {
+        font-size: 28px;
+    }
+
+    .container__error {
+        padding-right: 16%;
+    }
+}
+
+@media screen and (min-width: 880px) {
+
+    .container__error {
+        padding-right: 12%;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+
+    .container__error {
+        padding-right: 9%;
+    }
+} 
+
+@media screen and (min-width: 1400px) {
+
+    .container__error {
+        padding-right: 6%;
+    }
+} 
